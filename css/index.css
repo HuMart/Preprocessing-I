@@ -160,7 +160,28 @@ body {
   width: 1000px;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    width: 100%;
+    margin: 2px auto;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    background-color: #bcbdbd;
+    justify-content: space-evenly;
+  }
+}
 header {
+  width: 100%;
   margin: 5% auto;
   display: flex;
   align-items: flex-start;
@@ -169,21 +190,77 @@ header {
   background-color: #bcbdbd;
   justify-content: space-evenly;
 }
-header img {
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    margin: 5% auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 500px;
+    background-color: #bcbdbd;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 20%;
+    background-color: #bcbdbd;
+    justify-content: space-evenly;
+  }
+}
+img {
   margin-top: 5%;
   height: 62%;
   width: 32%;
   position: relative;
   border-radius: 100%;
 }
-header h1 {
+@media (max-width: 800px) {
+  img {
+    margin-top: 5%;
+    height: 62%;
+    width: 32%;
+    position: relative;
+    border-radius: 100%;
+  }
+}
+@media (max-width: 500px) {
+  img {
+    display: none;
+  }
+}
+h1 {
   width: 35%;
   display: flex;
   justify-items: center;
   font-size: 10rem;
   margin: 7%;
 }
-header #button {
+@media (max-width: 800px) {
+  h1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 50%;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    font-size: 50%;
+  }
+}
+#button {
   width: 17%;
   height: 12%;
   border-radius: 8px;
@@ -191,12 +268,12 @@ header #button {
   margin-top: 5%;
   text-decoration: none;
 }
-header .title {
+.title {
   width: 100%;
   font-size: 3rem;
   text-align: center;
 }
-header #big-title {
+#big-title {
   font-size: 20rem;
 }
 .top-content {

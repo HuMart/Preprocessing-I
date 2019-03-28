@@ -67,27 +67,26 @@ html, body {
 .container{
 	width: 1000px;
 	margin: 0 auto;
-        @media(max-width: 800px;){
-	        margin: 5% auto;	
-	        display: flex;
-	        flex-direction: column;
-	        align-items: flex-start;
-	        flex-wrap: wrap;	
-	        height: 500px;
-	        background-color:rgb(188, 189, 189);
-	        justify-content: space-evenly;
-        }
-		@media(max-width: 500px) {
-			margin: 5% auto;	
+	@media(max-width: 800px){
+		display: flex;		
+		width: 100%;
+		margin: 2px auto;
+		justify-content: space-evenly;
+		}	
+	@media(max-width: 500px) {
+		width: 100%;
+		margin: 0 auto;	
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		// align-items: flex-start;
 		flex-wrap: wrap;	
 		height: 500px;
 		background-color:rgb(188, 189, 189);
 		justify-content: space-evenly;
 		}
+	}
 header{	
+	width: 100%;
 	margin: 5% auto;	
 	display: flex;
 	align-items: flex-start;
@@ -95,8 +94,39 @@ header{
 	height: 500px;
 	background-color:rgb(188, 189, 189);
 	justify-content: space-evenly;
+	@media(max-width: 800px){
+	    width: 100%;
+	    margin: 5% auto;	
+	    display: flex;
+	    align-items: flex-start;
+	    flex-wrap: wrap;	
+	    height: 500px;
+	    background-color:rgb(188, 189, 189);
+	    justify-content: space-evenly;
+	}
+	@media(max-width: 500px){
+	    margin: 0 auto;	
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	    align-items: flex-start;	    	
+	    height: 20%;
+	    background-color:rgb(188, 189, 189);
+	    justify-content: space-evenly;
+	}
+}
 	
 	img{
+		@media(max-width: 800px){
+			margin-top: 5%;
+			height: 62%;
+			width: 32%;
+			position: relative;
+			border-radius: 100%;
+		}
+		@media(max-width: 500px){
+			display: none;
+		}
 		margin-top: 5%;
 		height: 62%;
 		width: 32%;
@@ -104,6 +134,20 @@ header{
 		border-radius: 100%;
 	}
 	h1{
+		@media(max-width: 800px){
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+            justify-items: center;
+			font-size: 50%;
+		}
+		@media(max-width: 500px){
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+            justify-items: center;
+			font-size: 50%;
+		}
 		width: 35%;
 		display: flex;
         justify-items: center;
@@ -126,7 +170,7 @@ header{
 	#big-title{
 		font-size: 20rem;
 	}
-}
+
 
 
 .top-content{	
